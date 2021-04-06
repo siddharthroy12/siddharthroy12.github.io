@@ -2,7 +2,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="I'm a Web Developer">
+	<meta name="description" content="{{ .Param `headDescription` }}">
 	
 	<!--Icon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -16,5 +16,7 @@
 	
 	<!-- My CSS -->
 	<link rel="stylesheet" href="/css/main.css" type="text/css" />
-	<title>Siddharth Roy - Web Developer</title>
+	<!-- MDI -->
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" type="text/css" />
+	<title>{{ .Param "headTitle" }}</title>
 </head>

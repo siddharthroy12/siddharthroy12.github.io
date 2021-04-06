@@ -133,6 +133,14 @@ header nav ul li a {
 	flex-wrap: wrap;
 }
 
+.techs .mdi {
+	font-size: 1.2rem;
+}
+
+.chip span {
+	margin-left: 5px;
+}
+
 @media (min-width: 900px) {
 	.avatar {
 		width: 13rem;
@@ -265,6 +273,7 @@ header nav ul li a {
 }
 
 /* Work */
+
 .text-my-work {
 	margin-top: -20px;
 	font-style: normal;
@@ -273,6 +282,62 @@ header nav ul li a {
 	letter-spacing: 0.025em;
 	color: #303030;
 	border-bottom: 2px dashed;
+}
+
+@media (max-width: 790px) {
+	.text-my-work {
+		font-size: 2.6rem;
+	}
+}
+
+/* Blog */
+
+.blog-header h1 {
+	text-align: center;
+	text-transform: none;
+	margin: 1rem 0;
+	margin-bottom: 0;
+}
+
+.blog-header h2 {
+	text-align: center;
+    color: #bdbdbd;
+    font-size: 1.3rem;
+    padding-top: 0;
+	padding-bottom: 2rem;
+}
+
+@media (max-width: 790px) {
+	.blog-header h1 {
+		font-size: 1.8rem;
+	}
+
+	.blog-header h2 {
+		font-size: 1.1rem;
+	}
+}
+
+#blog h3 {
+	font-size: 2rem;
+    color: #272727;
+    border-bottom: 2px dashed;
+    margin-bottom: 1rem;
+    max-width: 15rem;
+}
+
+/* 404 */
+
+.notfound {
+	font-size: 15rem;
+	color: crimson;
+	text-align: center;
+	margin: 4rem;
+}
+
+@media (max-width: 550px) {
+	.notfound {
+		font-size: 10rem;
+	}
 }
 
 /* Footer */
@@ -314,8 +379,13 @@ footer .container {
 	color: black;
 }
 
-.social-links li a:hover {
-	text-decoration: underline;
+.social-links li a i {
+	height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 footer p {
