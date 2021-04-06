@@ -67,63 +67,29 @@
 	</div>
 	<div class="project-list">
 		<div class="container">
-			<div class="project-card">
-				<div class="padding-1">
-					<h4 class="project-title">Anime Pahe</h4>
-					<p class="project-desc">
-						A free open source mobile client for animepahe.com for browsing,
-						watching and downloading anime
-					</p>
-					<ul class="project-techs">
-						<li>React Native</li>
-						<li>Javascript</li>
-					</ul>
-				</div>
-				<div class="project-links">
-					<div class="padding-1">
-						<a href="google.com">Code</a>
-						<a href="google.com">Live</a>
+			{{ range where .Site.RegularPages "Section" "projects" }}
+				{{ if .Param "featured" }}
+					<div class="project-card">
+						<div class="padding-1">
+							<h4 class="project-title">{{ .Title }}</h4>
+							<p class="project-desc">
+								{{ .Param "desc" }}
+							</p>
+							<ul class="project-techs">
+								{{ range .Param "stack"}}
+									<li>{{ . }}</li>
+								{{ end }}
+							</ul>
+						</div>
+						<div class="project-links">
+							<div class="padding-1">
+								<a href="{{ .Param `code` }}" target="_blank" rel="noreferrer">Code</a>
+								<a href="{{ .Param `code` }}" target="_blank" rel="noreferrer">Live</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="padding-1">
-					<h4 class="project-title">Anime Pahe</h4>
-					<p class="project-desc">
-						A free open source mobile client for animepahe.com for browsing,
-						watching and downloading anime
-					</p>
-					<ul class="project-techs">
-						<li>React Native</li>
-						<li>Javascript</li>
-					</ul>
-				</div>
-				<div class="project-links">
-					<div class="padding-1">
-						<a href="google.com">Code</a>
-						<a href="google.com">Live</a>
-					</div>
-				</div>
-			</div>
-			<div class="project-card">
-				<div class="padding-1">
-					<h4 class="project-title">Anime Pahe</h4>
-					<p class="project-desc">
-						A free open source mobile client for animepahe.com for browsing,
-						watching and downloading anime
-					</p>
-					<ul class="project-techs">
-						<li>React Native</li>
-						<li>Javascript</li>
-					</ul>
-				</div>
-				<div class="project-links">
-					<div class="padding-1">
-						<a href="google.com">Code</a>
-						<a href="google.com">Live</a>
-					</div>
-				</div>
-			</div>
+				{{ end }}
+			{{ end }}
 		</div>
 	</div>
 </section>
