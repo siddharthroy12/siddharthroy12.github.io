@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section rol="hero" class="blog-hero">
+	<img src="{{ .Param `banner` }}" alt="Banner" title="Blog Banner">
+</section>
+<article>
+	<div class="container content">
+		{{ .Content }}
+	</div>
+</article>
+{{ end }}

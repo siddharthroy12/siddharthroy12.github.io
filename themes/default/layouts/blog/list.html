@@ -2,6 +2,16 @@
 <main id="blog">
 	<div class="container">
 		<h3>Latest Blogs</h3>
+		<ul class="blog-list">
+			{{ range $i, $e := .Pages }}
+				{{ if $i }} <hr> {{ end }}
+				<li class="blog-list-item">
+					<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+					<h5>{{ .Param "subtitle" }}</h5>
+					<p class="date">{{ .Date.Format "Janurary 2, 2006" }}</p>
+				</li>
+			{{ end }}
+		</ul>
 	</div>
 </main>
 {{ end }}
