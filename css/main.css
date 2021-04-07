@@ -65,6 +65,12 @@ header nav ul li {
 header nav ul li a {
 	color: white;
 	text-decoration: none;
+	transition: 0.2s;
+	border-bottom: 2px dashed #272727;
+}
+
+header nav ul li a:hover {
+	border-bottom: 2px dashed #9e9a99;
 }
 
 .triangle-container {
@@ -251,7 +257,7 @@ header nav ul li a {
 }
 
 .project-links {
-	border-top: 2px dashed #676060;
+	border-top: 2px dashed #8e8787;
 }
 
 .project-links a {
@@ -302,27 +308,151 @@ header nav ul li a {
 .blog-header h2 {
 	text-align: center;
     color: #bdbdbd;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-top: 0;
+	text-transform: none;
 	padding-bottom: 2rem;
-}
-
-@media (max-width: 790px) {
-	.blog-header h1 {
-		font-size: 1.8rem;
-	}
-
-	.blog-header h2 {
-		font-size: 1.1rem;
-	}
 }
 
 #blog h3 {
 	font-size: 2rem;
     color: #272727;
     border-bottom: 2px dashed;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     max-width: 15rem;
+}
+
+.blog-hero > img {
+	display: block;
+	width: 100vw;
+	height: 20rem;
+	object-fit: cover;
+	margin-bottom: 2rem;
+}
+
+.blog-list {
+	padding-bottom: 3rem;
+}
+
+.blog-list li {
+	list-style: none;
+	margin-top: 2rem;
+}
+
+.blog-list h4 {
+	font-size: 2rem;
+    font-weight: 600;
+    color: #272727;
+}
+
+.blog-list h4 a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.blog-list h5 {
+	font-size: 1.1rem;
+    font-weight: 500;
+    color: #3e3e3e;
+}
+
+.blog-list .date {
+	color: #777474;
+}
+
+.blog-list hr {
+	border: 2px dashed #b5b4b4;
+	border-bottom: 0;
+	margin: 0 1rem;
+	margin-top: 2rem;
+}
+
+@media (max-width: 790px) {
+	.blog-header h1 {
+		font-size: 1.8rem;
+	}
+}
+
+.content {
+	color: #272727;
+}
+
+.content > * {
+	margin: 1rem 0;
+}
+
+.content img {
+	margin: auto;
+    max-width: 100%;
+	display: block;
+}
+
+.content ul, .content ol {
+	padding-left: 2rem;
+}
+
+.content li {
+	margin: 0.5rem 0;
+}
+
+.content blockquote {
+	border-left: 5px solid;
+    padding-left: 5px;
+    color: #525151;
+}
+
+.content code {
+	background-color: #3e3e3e;
+    color: white;
+    padding: 2px 6px;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.content pre {
+	background-color: #272727;
+    padding: 1rem;
+	overflow: auto;
+}
+
+.content pre > code {
+	background-color: unset;
+	padding: 0;
+}
+
+.content hr {
+	margin-top: 3rem;
+	border: 2px dashed #717171;
+    border-bottom: 0;
+}
+
+.content table {
+	display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+	border-collapse: collapse;
+}
+
+.content thead {
+	display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.content tbody {
+	display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.content th, .content td {
+	border: 2px dashed;
+	padding: 0.5rem;
+}
+
+.content tr:nth-child(2n) {
+	background-color: #e4e4e4;
 }
 
 /* 404 */
@@ -337,6 +467,12 @@ header nav ul li a {
 @media (max-width: 550px) {
 	.notfound {
 		font-size: 10rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.notfound {
+		font-size: 6rem;
 	}
 }
 
