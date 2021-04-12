@@ -2,6 +2,7 @@
 title: How to learn web design
 subtitle: My method of learning web design
 banner: /img/uploads/campaign-creators-ieiuits149m-unsplash.jpg
+date: 2021-03-20T09:01:25+05:30
 ---
 There are two methods which most Designers use
 

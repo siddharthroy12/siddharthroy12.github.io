@@ -38,6 +38,30 @@ main hr {
     border-bottom: 0;
 }
 
+.pagination {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.page-item {
+	color: #272727;
+	margin: 1rem 0.5rem;
+}
+
+.page-item a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.pagination .disabled {
+	color: #7a7979;
+}
+
+.pagination .active {
+	color: crimson;
+}
+
 /* Header */
 
 header {
@@ -375,6 +399,7 @@ header nav ul li a:hover {
 
 .content {
 	color: #272727;
+	padding-bottom: 1rem;
 }
 
 .content > * {

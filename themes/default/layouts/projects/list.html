@@ -7,7 +7,7 @@
 	</div>
 	<div class="project-list">
 		<div class="container">
-			{{ range where .Site.RegularPages "Section" "projects" }}
+			{{ range .Paginator.Pages }}
 				<div class="project-card">
 					<div class="padding-1">
 						<h4 class="project-title">{{ .Title }}</h4>
@@ -30,5 +30,6 @@
 			{{ end }}
 		</div>
 	</div>
+	{{ template "_internal/pagination.html" . }}
 </main>
 {{ end }}
