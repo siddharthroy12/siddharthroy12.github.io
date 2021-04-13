@@ -47,10 +47,10 @@
 	<hr>
 </main>
 <section class="featured-work">
-	<div class="featured-work-header-container">
+	<div class="featured-header-container">
 		<h3>
 			<p class="text-featured">Featured</p>
-			<p class="text-work">Work</p>
+			<p class="text-sub">Work</p>
 		</h3>
 	</div>
 	<div class="project-list">
@@ -79,6 +79,28 @@
 				{{ end }}
 			{{ end }}
 		</div>
+	</div>
+	<hr>
+</section>
+<section class="featured-blog">
+	<div class="featured-header-container">
+		<h3>
+			<p class="text-featured">Featured</p>
+			<p class="text-sub">Articles</p>
+		</h3>
+	</div>
+	<div class="container">
+		<ul class="blog-list">
+			{{ range $i, $e := where (where .Site.RegularPages "Section" "blog") ".Params.featured" "==" true }}
+			{{ if $i }} <hr> {{ end }}
+				
+				<li class="blog-list-item">
+					<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+					<h5>{{ .Param "subtitle" }}</h5>
+					<p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+				</li>
+			{{ end }}
+		</ul>
 	</div>
 </section>
 {{ end }}

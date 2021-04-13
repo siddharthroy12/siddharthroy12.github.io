@@ -4,8 +4,9 @@
     <body>
         {{- partial "blogheader.html" . -}}
         <div id="content">
-        {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }}
         </div>
+        {{- block "contact" .}}{{- end }}
         {{- partial "footer.html" . -}}
     </body>
 </html>

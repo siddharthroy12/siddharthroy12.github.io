@@ -4,7 +4,11 @@
 			<li><a href="/">Home</a></li>
 			<li><a href="/projects">Work</a></li>
 			<li><a href="/blog">Blog</a></li>
-			<li><a href="#contact">Contact</a></li>
+			{{ if (eq .RelPermalink "/blog/") }}
+				<li><a href="/#contact">Contact</a></li>
+			{{ else }}
+				<li><a href="#contact">Contact</a></li>
+			{{ end}}
 		</ul>
 	</nav>
 	<div class="triangle-container">
