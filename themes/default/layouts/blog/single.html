@@ -7,6 +7,25 @@
 		{{ .Content }}
 	</div>
 </article>
+<div class="container">
+	<section class="author">
+		<div class="avatar-section">
+			<img src="https://siddharthroy.netlify.app/img/profilepic.jpg" alt="avatar" class="author-avatar">
+		</div>
+		<div class="info-section">
+			<h3 class="author-name">
+				{{ with .Site.GetPage "/" }}
+					{{ .Param "name" }}
+				{{ end }}
+			</h3>
+			<p>
+				{{ with .Site.GetPage "/" }}
+					{{ .Param "what-i-do" }}
+				{{ end }}
+			</p>
+		</div>
+	</section>
+</div>
 {{ end }}
 {{ define "contact" }}
 {{- partial "contact.html" . -}}
