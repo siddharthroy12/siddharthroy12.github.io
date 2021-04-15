@@ -383,7 +383,8 @@ header nav ul li a:hover {
 }
 
 .blog-list li:hover h4 {
-	border-bottom: 2px dashed black;
+	text-decoration: underline;
+	text-decoration-style: dashed;
 }
 
 .blog-list h4 {
@@ -406,6 +407,7 @@ header nav ul li a:hover {
 	font-size: 1.1rem;
     font-weight: 500;
     color: #3e3e3e;
+	line-height: 2ch;
 }
 
 .blog-list .date {
@@ -508,6 +510,27 @@ header nav ul li a:hover {
 	background-color: #e4e4e4;
 }
 
+.author {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-top: 2px dashed #5f5e5e;
+	border-bottom: 2px dashed #5f5e5e;
+	margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.author-avatar {
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}
+
+.info-section {
+	padding: 0 1rem;
+}
+
 /* 404 */
 
 .notfound {
@@ -536,19 +559,27 @@ header nav ul li a:hover {
 	background-color: #272727;
 	margin: auto;
 	color: white;
-	padding: 2rem 8rem;
+	padding: 2rem 0;
+}
+
+.contact-container {
+	max-width: 26rem;
+	margin: auto;
+	padding: 0 1rem;
 }
 
 .contact-box h4 {
 	font-size: 3rem;
 	text-align: center;
-	line-height: 3rem;
+	line-height: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .contact-box p {
 	text-align: center;
 	color: rgb(206, 206, 206);
 	margin-bottom: 2rem;
+	font-size: 1.1rem;
 }
 
 .contact-box form label {
@@ -629,12 +660,6 @@ form button:focus {
 .email-me a {
 	color: white;
 	margin-left: 5px;
-}
-
-@media (max-width: 500px) {
-	.contact-box {
-		padding: 2rem 3rem;
-	}
 }
 
 /* Footer */
