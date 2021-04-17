@@ -92,8 +92,7 @@
 	<div class="container">
 		<ul class="blog-list">
 			{{ range $i, $e := where (where .Site.RegularPages "Section" "blog") ".Params.featured" "==" true }}
-			{{ if $i }} <hr> {{ end }}
-				
+			{{ if $i }} <hr style="margin: 2rem auto;width: 30rem;"> {{ end }}
 				<li class="blog-list-item">
 					<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
 					<h5>{{ .Param "subtitle" }}</h5>
