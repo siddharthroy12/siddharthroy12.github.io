@@ -31,3 +31,33 @@ collections:
       - {label: "Source code", name: "code", widget: "string"}
       - {label: "Live", name: "live", widget: "string"}
       - {label: "Featured", name: "featured", widget: "boolean", default: false}
+  
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Front Page"
+        name: "index"
+        file: "content/_index.md"
+        fields:
+          - {label: "Head Title", name: headtitle, widget: string}
+          - {label: "Head Description", name: headdescription, widget: text}
+          - {label: "Author", name: name, widget: string}
+          - {label: "Profession", name: profession, widget: string}
+          - {label: "What I Do", name: what-i-do, widget: text}
+
+      - label: "Blog List Page"
+        name: "bloglist"
+        file: "content/blog/_index.md"
+        fields:
+          - {label: "Head Title", name: headtitle, widget: string}
+          - {label: "Head Description", name: headdescription, widget: text}
+          - {label: "Title", name: title, widget: string}
+          - {label: "Subtitle", name: subtitle, widget: text}
+
+      - label: "Work Page"
+        name: "work"
+        file: "content/projects/_index.md"
+        fields:
+          - {label: "Head Title", name: headtitle, widget: string}
+          - {label: "Head Description", name: headdescription, widget: text}
+          - {label: "Title", name: title, widget: string}
