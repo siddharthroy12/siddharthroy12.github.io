@@ -3,7 +3,7 @@ title: Markdown Test
 subtitle: A blog with all markdown elements
 banner: /img/uploads/campaign-creators-ieiuits149m-unsplash.jpg
 date: 2021-04-12T09:01:25+05:30
-featured: false
+featured: true
 ---
 # Mou
 
