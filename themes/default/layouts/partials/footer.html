@@ -1,6 +1,6 @@
 <footer>
 	<div class="container">
-		<p>© <span id="hostname">siddharthroy</span> <span id="now-year">{{ now.Format "2006" }}</span></p>
+		<p>© <span id="hostname">siddharthroy</span> <span id="now-year">2021</span></p>
 		<ul class="social-links">
 			<li>
 				<a href="https://www.instagram.com/siddharthroy12/" rel="noreferrer" target="_blank">
@@ -30,5 +30,5 @@
 	hostnameElement.innerHTML = location.hostname;
 
 	nowYear = document.getElementById('now-year')
-	nowYear.innerHTML = Date().getFullYear()
+	nowYear.innerHTML = (new Date()).getFullYear();
 </script>

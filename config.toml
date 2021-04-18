@@ -1,6 +1,6 @@
-baseURL = ""
+baseURL = "/"
 languageCode = "en-us"
 title = "Portfolio"
 theme = "default"
-relativeURLs = true
+
 paginate = 6
