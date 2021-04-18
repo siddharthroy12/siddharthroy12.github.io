@@ -1,6 +1,6 @@
 <footer>
 	<div class="container">
-		<p>© siddharthroy.netlify.app {{ now.Format "2006" }}</p>
+		<p>© <span id="hostname">siddharthroy</span> <span id="now-year">{{ now.Format "2006" }}</span></p>
 		<ul class="social-links">
 			<li>
 				<a href="https://www.instagram.com/siddharthroy12/" rel="noreferrer" target="_blank">
@@ -25,3 +25,10 @@
 		</ul>
 	</div>
 </footer>
+<script>
+	hostnameElement = document.getElementById('hostname');
+	hostnameElement.innerHTML = location.hostname;
+
+	nowYear = document.getElementById('now-year')
+	nowYear.innerHTML = Date().getFullYear()
+</script>
