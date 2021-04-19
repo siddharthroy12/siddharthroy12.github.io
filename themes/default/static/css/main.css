@@ -48,13 +48,28 @@ hr {
 
 .pagination {
 	display: flex;
-	justify-content: center;
-	list-style: none;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid grey;
+    width: fit-content;
+    margin: 4rem auto;
+    padding: 1rem;
+    border-radius: 50px;
+    height: 3rem;
+    background-color: #272727;
 }
 
 .page-item {
-	color: #272727;
-	margin: 1rem 0.5rem;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin: 1rem 0.5rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 
 .page-item a {
@@ -67,7 +82,7 @@ hr {
 }
 
 .pagination .active {
-	color: crimson;
+	color: #2386dc;
 }
 
 /* Header */
