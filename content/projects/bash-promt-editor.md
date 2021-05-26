@@ -1,10 +1,10 @@
 ---
-title: Bash Promt Editor
-desc: Online Editor for linux users who want to customize their shell promt with
-  graphical editor
+title: Bash Prompt Editor
+desc: Online Editor for linux users who want to customize their shell prompt
+  with graphical editor
 stack:
   - React
-code: https://github.com/siddharthroy12/bash-promt-generator
-live: https://promtgen.netlify.app/
+code: https://github.com/siddharthroy12/bash-prompt-generator
+live: https://promptgen.netlify.app/
 featured: true
 ---
